@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bulb On and Off</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin-top: 50px;
+      background-color: #f5f5f5;
+    }
+
+    img {
+      width: 150px;
+      height: auto;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+    }
+
+    .on-btn {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .off-btn {
+      background-color: #f44336;
+      color: white;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Bulb Control</h1>
+  <img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Bulb">
+  <br>
+  <button class="on-btn" onclick="turnOn()">ON</button>
+  <button class="off-btn" onclick="turnOff()">OFF</button>
+
+  <script>
+    function turnOn() {
+      document.getElementById('bulb').src = "https://www.w3schools.com/js/pic_bulbon.gif";
+    }
+
+    function turnOff() {
+      document.getElementById('bulb').src = "https://www.w3schools.com/js/pic_bulboff.gif";
+    }
+  </script>
+
+</body>
+</html>
