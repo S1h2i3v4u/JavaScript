@@ -3,28 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Color Flipper</title>
-
-    <style>
-        button {
-            border-radius: 25px;
-            width: 100px;
-            height: 50px;
-            margin: 5px;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-weight: bold;
-        }
-        #green {
-             background-color: green;
-        }
-        #red { 
-            background-color: red; 
-        }
-        #blue {
-             background-color: blue; 
-        }
-    </style>
+    <link rel = "stylesheet" href = "style.css">
+ 
   </head>
   <body>
     <h1>Color Flipper</h1>
@@ -34,19 +14,6 @@
     <button id="blue" onclick="setColor('blue')">Blue</button>
     <button onclick="randomColor()">Random</button>
 
-    <script>
-      function setColor(color) {
-        document.body.style.backgroundColor = color;
-      }
-
-      function randomColor() {
-        const red = Math.floor(Math.random() * 256);
-        const green = Math.floor(Math.random() * 256);
-        const blue = Math.floor(Math.random() * 256);
-
-        const color = `rgb(${red}, ${green}, ${blue})`;
-        document.body.style.backgroundColor = color;
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
