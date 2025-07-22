@@ -1,0 +1,19 @@
+ button {
+            border-radius: 25px;
+            width: 100px;
+            height: 50px;
+            margin: 5px;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        #green {
+             background-color: green;
+        }
+        #red { 
+            background-color: red; 
+        }
+        #blue {
+             background-color: blue; 
+        }
