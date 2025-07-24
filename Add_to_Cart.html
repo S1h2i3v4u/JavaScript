@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <button class="btn_1" onclick="
+    cartQuantity++;
+    document.querySelector('#cart-summary').innerText = `Your bag has ${cartQuantity} items`; ">
+     Add to Cart </button>
+
+  <button class="btn_2" onclick="
+    if (cartQuantity > 0) {
+      cartQuantity--;
+    }
+    document.querySelector('#cart-summary').innerText = `Your bag has ${cartQuantity} items`;">
+    Remove from Cart </button>
+
+  <h1 id="cart-summary">Your bag has 0 items</h1>
+
+  <script>
+    let cartQuantity = 0;
+  </script>
+
+</body>
+</html>
